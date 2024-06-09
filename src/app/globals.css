@@ -1,5 +1,8 @@
+:root {
+  background-color: #f2e8dc;
+}
+
 body {
-  background-color: beige;
   margin: 0;
   font-family: Arial, sans-serif;
 }
@@ -9,7 +12,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #fff;
 }
 
 nav ul {
@@ -27,12 +29,22 @@ section {
   padding: 50px 20px;
 }
 
+h1 {
+  color: #315ad8;
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #fff;
+  background-color: #dbbc9f;
+  color: #ffffff;
 }
 
 @media (max-width: 768px) {
@@ -48,31 +60,5 @@ section {
 
   nav ul li {
     margin: 10px 0;
-  }
-
-  .welcome,
-  .popup,
-  .catering,
-  .about {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .welcome img,
-  .popup img,
-  .catering img,
-  .about img {
-    width: 100%;
-    margin: 20px 0;
-  }
-
-  .about .info {
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-  }
-
-  .about .info div {
-    margin: 20px 0;
   }
 }

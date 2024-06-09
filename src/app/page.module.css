@@ -27,6 +27,11 @@
   transition: all 0.3s ease;
 }
 
+.headline {
+  flex-direction: column;
+  text-align: center;
+}
+
 .welcome img,
 .popup img,
 .catering img,
@@ -41,14 +46,26 @@
   font-size: 1.5rem;
   padding: 50px 20px;
   transition: all 0.3s ease;
+  color: #6a5b4c;
+  font-style: italic;
+}
+
+.quote span {
+  font-size: 1rem;
 }
 
 .catering {
-  background-color: #f5deb3; /* lightbrown */
+  background-color: #dbbc9f;
+  color: #9c856f;
 }
 
 .popup {
-  background-color: #ffcccb; /* lightred */
+  background-color: #ca5b5b;
+  color: #315ad8;
+}
+
+.about h2 {
+  color: #ca5b5b;
 }
 
 .about img {
@@ -98,6 +115,32 @@
 
   .about .info div {
     width: 100%;
+    margin: 20px 0;
+  }
+
+  .welcome,
+  .popup,
+  .catering,
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .welcome img,
+  .popup img,
+  .catering img,
+  .about img {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .about .info {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .about .info div {
     margin: 20px 0;
   }
 }

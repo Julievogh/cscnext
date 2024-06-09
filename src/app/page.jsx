@@ -1,4 +1,5 @@
 import React from "react";
+import VideoSection from "./components/VideoSection";
 import styles from "./page.module.css";
 
 export default function Page() {
@@ -21,23 +22,23 @@ export default function Page() {
 
       <section className={styles.hero}>
         <h1>Cozy Social Club</h1>
-        <video src="hero-video.mp4" controls>
-          Your browser does not support the video tag.
-        </video>
+        <VideoSection src="video/hero-video.mp4" />
       </section>
 
-      <section className="welcome">
-        <div>
-          <h2>Welcome to the club</h2>
-          <p className={styles["welcome-text"]}>
-            Experience our pop-up food...
-          </p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-          <p>
-            <a href="#about-us">About Cozy Social Club...</a>
-          </p>
+      <section className={styles.headline}>
+        <h2>Welcome to the club</h2>
+        <div className={styles.welcome}>
+          <img src="food/food3.png" alt="Welcome" />
+          <div>
+            <p className={styles["welcome-text"]}>
+              Experience our pop-up food...
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <p>
+              <a href="#about-us">About Cozy Social Club...</a>
+            </p>
+          </div>
         </div>
-        <img src="food/food3.png" alt="Welcome" />
       </section>
 
       <section className={styles.popup}>
@@ -45,6 +46,7 @@ export default function Page() {
           <h2 style={{ color: "blue" }}>Pop-up</h2>
           <h3>Experience our pop-up food</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+          <button>Read More</button>
         </div>
         <img src="food/food1.png" alt="Pop-up" />
       </section>
@@ -52,11 +54,12 @@ export default function Page() {
       <section className={styles.quote}>
         <p>
           "Juan and Bob created the best experience at our yearly company party.
-          Delicious food!" - Joe from Juice Shop
+          Delicious food!" - <span>Joe from Juice Shop</span>
         </p>
       </section>
 
       <section className={styles.catering}>
+        <img src="food/food2.png" alt="Catering" />
         <div>
           <h2>CATERING</h2>
           <h3>A fine-dining experience for your party</h3>
@@ -65,11 +68,10 @@ export default function Page() {
             <a href="#contact">Contact us for more info...</a>
           </p>
         </div>
-        <img src="food/food2.png" alt="Catering" />
       </section>
 
       <section className={styles.about}>
-        <h2 style={{ color: "red" }}>ABOUT US</h2>
+        <h2>ABOUT US</h2>
         <img src="imgs/boys.png" alt="Owners" />
         <div className={styles.info}>
           <div>
